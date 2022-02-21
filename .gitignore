@@ -1,0 +1,14 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
+hardhat.config.ts
+hardhat.config.ts
+hardhat.config.ts
+scripts/task.ts
+test/test.ts

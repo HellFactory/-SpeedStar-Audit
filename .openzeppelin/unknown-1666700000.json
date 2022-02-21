@@ -1,0 +1,1355 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x19F9315Bf877e73b00f1547bA8743793c5A8A3f7",
+    "txHash": "0xee75d7f142d323bd96acaec9199e46a8046424cb7cac0be4f6d760538b73f567",
+    "deployTransaction": {
+      "hash": "0xee75d7f142d323bd96acaec9199e46a8046424cb7cac0be4f6d760538b73f567",
+      "type": 0,
+      "accessList": null,
+      "blockHash": "0x073a87ea854938c6eda9db9290c2a44b982f664767d12087b4e5d68a71e53ef2",
+      "blockNumber": 18449658,
+      "transactionIndex": 1,
+      "confirmations": 1,
+      "from": "0xa85B2d38f2fb6D0658d1cCf7D18E130b17b41d12",
+      "gasPrice": {
+        "type": "BigNumber",
+        "hex": "0x02540be400"
+      },
+      "gasLimit": {
+        "type": "BigNumber",
+        "hex": "0x075da0"
+      },
+      "to": null,
+      "value": {
+        "type": "BigNumber",
+        "hex": "0x00"
+      },
+      "nonce": 1,
+      "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
+      "r": "0xea5ae9cbde3bd6147203cb5aea1ceef26f444bab484cf96754f9af9879011b6d",
+      "s": "0x692f0c6ca9c4c097d47055246fbc4114b614af4c16e0c45e8cf06bb756be491d",
+      "v": 3333400036,
+      "creates": "0x19F9315Bf877e73b00f1547bA8743793c5A8A3f7",
+      "chainId": 1666700000
+    }
+  },
+  "proxies": [
+    {
+      "address": "0xe9D84B16259b6D6c4e4924af91584d641f0BC0D2",
+      "txHash": "0x616dcc99cd6dbd6012294c3aae3d39d8c2fb7dffd6b32e4295d33301dc29bb47",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x795dce031C5CA2B702b532d6a9c403AD53BD321D",
+      "txHash": "0x9051ae9b1fca655e985f0118815798bbd5c13f8ef62353286788c836b960ae5c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3B561fB716D7812884dC38FF8fC8639AA30A2CF1",
+      "txHash": "0x7406b7e29398dcf702e0e3ba2ceacc1bb97799d7df89d7f90abe6a1786904e65",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6189BCB7e1a13BfE6420D1e027A5C190Ce113E4C",
+      "txHash": "0xbfe493e02bd3326fac536bda26fd03b0694b250583e38ecf95f45448fbf60c1a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xEeA6A584EDE6170E71Dc4c8D1A1ded2EcA69da9F",
+      "txHash": "0xdf726eee602d78ea4888f689625029099f6db3ce43119cd88c50e4661551082f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7757b3735E3998e4bF740318dfe39751AA03EF07",
+      "txHash": "0xaed4433d145bff3cbe8d51efc3af7fb5970b30c95ab47caec6bff22393a287ee",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "8d445a6375047d25dc13ffba6be75d7e8d624851adb46222f35a1c46f1af6d67": {
+      "address": "0x49B2f934755858895AEdC0808e735bF3935B1a26",
+      "txHash": "0x7f48d4bf20b67c7b980003e186704f022e68a82a957128d625ad0accf16e3814",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+          },
+          {
+            "contract": "Swap",
+            "label": "daiPriceFeed",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "src": "contracts/Swap.sol:42"
+          },
+          {
+            "contract": "Swap",
+            "label": "ethPriceFeed",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "src": "contracts/Swap.sol:43"
+          },
+          {
+            "contract": "Swap",
+            "label": "busdPriceFeed",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "src": "contracts/Swap.sol:45"
+          },
+          {
+            "contract": "Swap",
+            "label": "usdcPriceFeed",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "src": "contracts/Swap.sol:47"
+          },
+          {
+            "contract": "Swap",
+            "label": "usdtPriceFeed",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "src": "contracts/Swap.sol:49"
+          },
+          {
+            "contract": "Swap",
+            "label": "allowTokenSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/Swap.sol:50"
+          },
+          {
+            "contract": "Swap",
+            "label": "transactions",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_struct(TransactionList)2144_storage))",
+            "src": "contracts/Swap.sol:52"
+          },
+          {
+            "contract": "Swap",
+            "label": "usdtToken",
+            "type": "t_address",
+            "src": "contracts/Swap.sol:54"
+          },
+          {
+            "contract": "Swap",
+            "label": "usdcToken",
+            "type": "t_address",
+            "src": "contracts/Swap.sol:55"
+          },
+          {
+            "contract": "Swap",
+            "label": "daiToken",
+            "type": "t_address",
+            "src": "contracts/Swap.sol:55"
+          },
+          {
+            "contract": "Swap",
+            "label": "busdToken",
+            "type": "t_address",
+            "src": "contracts/Swap.sol:57"
+          }
+        ],
+        "types": {
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_struct(TransactionList)2144_storage))": {
+            "label": "mapping(address => mapping(address => struct Swap.TransactionList))"
+          },
+          "t_mapping(t_address,t_struct(TransactionList)2144_storage)": {
+            "label": "mapping(address => struct Swap.TransactionList)"
+          },
+          "t_struct(TransactionList)2144_storage": {
+            "label": "struct Swap.TransactionList",
+            "members": [
+              {
+                "label": "transactionInfo",
+                "type": "t_mapping(t_uint256,t_struct(TransactionInfo)2138_storage)"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TransactionInfo)2138_storage)": {
+            "label": "mapping(uint256 => struct Swap.TransactionInfo)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(TransactionInfo)2138_storage": {
+            "label": "struct Swap.TransactionInfo",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "swapAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "receiveAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "3e6a0c12340ffc7726e32947236a923bf8f78bbd9f17687540ff92d7c8a50fb2": {
+      "address": "0x4e51A93f824429ff9334e87E45E235966ED978e4",
+      "txHash": "0xf285093da34dcdc1ae68a660a6e03f75dc5013ac5805215be7497a4289093bc4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+          },
+          {
+            "contract": "ERC721HolderUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol:34"
+          },
+          {
+            "contract": "Staking",
+            "label": "wag",
+            "type": "t_contract(ISpeed)3036",
+            "src": "contracts/farm/Staking.sol:109"
+          },
+          {
+            "contract": "Staking",
+            "label": "devaddr",
+            "type": "t_address",
+            "src": "contracts/farm/Staking.sol:111"
+          },
+          {
+            "contract": "Staking",
+            "label": "wagPerBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:114"
+          },
+          {
+            "contract": "Staking",
+            "label": "BONUS_MULTIPLIER",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:116"
+          },
+          {
+            "contract": "Staking",
+            "label": "poolInfo",
+            "type": "t_array(t_struct(PoolInfo)3120_storage)dyn_storage",
+            "src": "contracts/farm/Staking.sol:120"
+          },
+          {
+            "contract": "Staking",
+            "label": "userInfo",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)3087_storage))",
+            "src": "contracts/farm/Staking.sol:122"
+          },
+          {
+            "contract": "Staking",
+            "label": "totalAllocPoint",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:129"
+          },
+          {
+            "contract": "Staking",
+            "label": "startBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:130"
+          },
+          {
+            "contract": "Staking",
+            "label": "lockRewardPercent",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:130"
+          }
+        ],
+        "types": {
+          "t_contract(ISpeed)3036": {
+            "label": "contract ISpeed"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_struct(PoolInfo)3120_storage)dyn_storage": {
+            "label": "struct Staking.PoolInfo[]"
+          },
+          "t_struct(PoolInfo)3120_storage": {
+            "label": "struct Staking.PoolInfo",
+            "members": [
+              {
+                "label": "lpToken",
+                "type": "t_address"
+              },
+              {
+                "label": "allocPoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lastRewardBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "accWagPerShare",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)3087_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Staking.UserInfo))"
+          },
+          "t_mapping(t_address,t_struct(UserInfo)3087_storage)": {
+            "label": "mapping(address => struct Staking.UserInfo)"
+          },
+          "t_struct(UserInfo)3087_storage": {
+            "label": "struct Staking.UserInfo",
+            "members": [
+              {
+                "label": "ownedTokenId",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedStable",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedFacility",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "stableIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "facilityIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)3111_storage)dyn_storage"
+              },
+              {
+                "label": "stables",
+                "type": "t_array(t_struct(Stable)3102_storage)dyn_storage"
+              },
+              {
+                "label": "facility",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardDebt",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_struct(Horse)3111_storage)dyn_storage": {
+            "label": "struct Staking.Horse[]"
+          },
+          "t_struct(Horse)3111_storage": {
+            "label": "struct Staking.Horse",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "enterBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "remainBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_struct(Stable)3102_storage)dyn_storage": {
+            "label": "struct Staking.Stable[]"
+          },
+          "t_struct(Stable)3102_storage": {
+            "label": "struct Staking.Stable",
+            "members": [
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)3111_storage)dyn_storage"
+              },
+              {
+                "label": "multiplier",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    },
+    "5783d631b68a1ea58e46b0c6233e06fff28f1dd335fc240dfb6d6889457ff87b": {
+      "address": "0xEd4cc29BaB63929464Dd76B425A30ee64D383bD2",
+      "txHash": "0xf152cd4f8482167e595edefd3d02a04fc831f2466c0aa2192ce6f9b7b75c00c6",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC721HolderUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol:35"
+          },
+          {
+            "contract": "Staking",
+            "label": "speed",
+            "type": "t_contract(ISpeed)7969",
+            "src": "contracts/farm/Staking.sol:133"
+          },
+          {
+            "contract": "Staking",
+            "label": "star",
+            "type": "t_contract(ERC20Upgradeable)818",
+            "src": "contracts/farm/Staking.sol:135"
+          },
+          {
+            "contract": "Staking",
+            "label": "facility",
+            "type": "t_contract(IFacility)7954",
+            "src": "contracts/farm/Staking.sol:136"
+          },
+          {
+            "contract": "Staking",
+            "label": "horse",
+            "type": "t_contract(IHorse)7921",
+            "src": "contracts/farm/Staking.sol:137"
+          },
+          {
+            "contract": "Staking",
+            "label": "devaddr",
+            "type": "t_address",
+            "src": "contracts/farm/Staking.sol:138"
+          },
+          {
+            "contract": "Staking",
+            "label": "wagPerBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:141"
+          },
+          {
+            "contract": "Staking",
+            "label": "BONUS_MULTIPLIER",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:144"
+          },
+          {
+            "contract": "Staking",
+            "label": "poolInfo",
+            "type": "t_struct(PoolInfo)8055_storage",
+            "src": "contracts/farm/Staking.sol:146"
+          },
+          {
+            "contract": "Staking",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)8022_storage)",
+            "src": "contracts/farm/Staking.sol:149"
+          },
+          {
+            "contract": "Staking",
+            "label": "starOwner",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/farm/Staking.sol:152"
+          },
+          {
+            "contract": "Staking",
+            "label": "totalAllocPoint",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:157"
+          },
+          {
+            "contract": "Staking",
+            "label": "startBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:160"
+          },
+          {
+            "contract": "Staking",
+            "label": "lockRewardPercent",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:162"
+          }
+        ],
+        "types": {
+          "t_contract(ISpeed)7969": {
+            "label": "contract ISpeed"
+          },
+          "t_contract(ERC20Upgradeable)818": {
+            "label": "contract ERC20Upgradeable"
+          },
+          "t_contract(IFacility)7954": {
+            "label": "contract IFacility"
+          },
+          "t_contract(IHorse)7921": {
+            "label": "contract IHorse"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(PoolInfo)8055_storage": {
+            "label": "struct Staking.PoolInfo",
+            "members": [
+              {
+                "label": "totalStake",
+                "type": "t_uint256"
+              },
+              {
+                "label": "allocPoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lastRewardBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "accWagPerShare",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)8022_storage)": {
+            "label": "mapping(address => struct Staking.UserInfo)"
+          },
+          "t_struct(UserInfo)8022_storage": {
+            "label": "struct Staking.UserInfo",
+            "members": [
+              {
+                "label": "ownedTokenId",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedStable",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedFacility",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "stableIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "facilityIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8046_storage)dyn_storage"
+              },
+              {
+                "label": "stables",
+                "type": "t_array(t_struct(Stable)8037_storage)dyn_storage"
+              },
+              {
+                "label": "facility",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "totalHorse",
+                "type": "t_uint256"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardDebt",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_struct(Horse)8046_storage)dyn_storage": {
+            "label": "struct Staking.Horse[]"
+          },
+          "t_struct(Horse)8046_storage": {
+            "label": "struct Staking.Horse",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "enterBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "remainBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_struct(Stable)8037_storage)dyn_storage": {
+            "label": "struct Staking.Stable[]"
+          },
+          "t_struct(Stable)8037_storage": {
+            "label": "struct Staking.Stable",
+            "members": [
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8046_storage)dyn_storage"
+              },
+              {
+                "label": "multiplier",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    },
+    "e22de2e1ab7df37169931ac7fc4e81050fe26fcfe9bd75ecae455cd013c3bf58": {
+      "address": "0x0FE9Ab6f9f77F8Af345bDC05A321cD980653C2Ee",
+      "txHash": "0x51720abf3fea10b954b42f5b6b983142a4b439e6ead57123a262ae9c9f8c877a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC721HolderUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol:35"
+          },
+          {
+            "contract": "Staking",
+            "label": "speed",
+            "type": "t_contract(ISpeed)8217",
+            "src": "contracts/farm/Staking.sol:132"
+          },
+          {
+            "contract": "Staking",
+            "label": "star",
+            "type": "t_contract(ERC20Upgradeable)818",
+            "src": "contracts/farm/Staking.sol:133"
+          },
+          {
+            "contract": "Staking",
+            "label": "facility",
+            "type": "t_contract(IFacility)8202",
+            "src": "contracts/farm/Staking.sol:134"
+          },
+          {
+            "contract": "Staking",
+            "label": "horse",
+            "type": "t_contract(IHorse)8169",
+            "src": "contracts/farm/Staking.sol:135"
+          },
+          {
+            "contract": "Staking",
+            "label": "devaddr",
+            "type": "t_address",
+            "src": "contracts/farm/Staking.sol:137"
+          },
+          {
+            "contract": "Staking",
+            "label": "speedPerBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:139"
+          },
+          {
+            "contract": "Staking",
+            "label": "BONUS_MULTIPLIER",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:143"
+          },
+          {
+            "contract": "Staking",
+            "label": "poolInfo",
+            "type": "t_struct(PoolInfo)8303_storage",
+            "src": "contracts/farm/Staking.sol:145"
+          },
+          {
+            "contract": "Staking",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)8270_storage)",
+            "src": "contracts/farm/Staking.sol:147"
+          },
+          {
+            "contract": "Staking",
+            "label": "starBalance",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/farm/Staking.sol:150"
+          },
+          {
+            "contract": "Staking",
+            "label": "totalAllocPoint",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:156"
+          },
+          {
+            "contract": "Staking",
+            "label": "startBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:160"
+          }
+        ],
+        "types": {
+          "t_contract(ISpeed)8217": {
+            "label": "contract ISpeed"
+          },
+          "t_contract(ERC20Upgradeable)818": {
+            "label": "contract ERC20Upgradeable"
+          },
+          "t_contract(IFacility)8202": {
+            "label": "contract IFacility"
+          },
+          "t_contract(IHorse)8169": {
+            "label": "contract IHorse"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(PoolInfo)8303_storage": {
+            "label": "struct Staking.PoolInfo",
+            "members": [
+              {
+                "label": "totalStake",
+                "type": "t_uint256"
+              },
+              {
+                "label": "allocPoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lastRewardBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "accSpeedPerShare",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)8270_storage)": {
+            "label": "mapping(address => struct Staking.UserInfo)"
+          },
+          "t_struct(UserInfo)8270_storage": {
+            "label": "struct Staking.UserInfo",
+            "members": [
+              {
+                "label": "ownedTokenId",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedStable",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedFacility",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "stableIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "facilityIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8294_storage)dyn_storage"
+              },
+              {
+                "label": "stables",
+                "type": "t_array(t_struct(Stable)8285_storage)dyn_storage"
+              },
+              {
+                "label": "facility",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "totalHorse",
+                "type": "t_uint256"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardDebt",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_struct(Horse)8294_storage)dyn_storage": {
+            "label": "struct Staking.Horse[]"
+          },
+          "t_struct(Horse)8294_storage": {
+            "label": "struct Staking.Horse",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "enterBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "remainBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_struct(Stable)8285_storage)dyn_storage": {
+            "label": "struct Staking.Stable[]"
+          },
+          "t_struct(Stable)8285_storage": {
+            "label": "struct Staking.Stable",
+            "members": [
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8294_storage)dyn_storage"
+              },
+              {
+                "label": "multiplier",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    },
+    "4670ac2c0059b4b43f7263a59931d507889701a70155bce31c75e2494a03c5d6": {
+      "address": "0xAa8A8a160b2d00D6a853817952DDaf4a2997cf56",
+      "txHash": "0x23cc65df8eecaad44d72084d75a28610f14bb878a004700339da0b5a0dcc0499",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC721HolderUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol:35"
+          },
+          {
+            "contract": "Staking",
+            "label": "speed",
+            "type": "t_contract(ISpeed)8217",
+            "src": "contracts/farm/Staking.sol:132"
+          },
+          {
+            "contract": "Staking",
+            "label": "star",
+            "type": "t_contract(ERC20Upgradeable)818",
+            "src": "contracts/farm/Staking.sol:133"
+          },
+          {
+            "contract": "Staking",
+            "label": "facility",
+            "type": "t_contract(IFacility)8202",
+            "src": "contracts/farm/Staking.sol:134"
+          },
+          {
+            "contract": "Staking",
+            "label": "horse",
+            "type": "t_contract(IHorse)8169",
+            "src": "contracts/farm/Staking.sol:135"
+          },
+          {
+            "contract": "Staking",
+            "label": "devaddr",
+            "type": "t_address",
+            "src": "contracts/farm/Staking.sol:137"
+          },
+          {
+            "contract": "Staking",
+            "label": "speedPerBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:139"
+          },
+          {
+            "contract": "Staking",
+            "label": "BONUS_MULTIPLIER",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:143"
+          },
+          {
+            "contract": "Staking",
+            "label": "poolInfo",
+            "type": "t_struct(PoolInfo)8303_storage",
+            "src": "contracts/farm/Staking.sol:145"
+          },
+          {
+            "contract": "Staking",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)8270_storage)",
+            "src": "contracts/farm/Staking.sol:147"
+          },
+          {
+            "contract": "Staking",
+            "label": "starBalance",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/farm/Staking.sol:149"
+          },
+          {
+            "contract": "Staking",
+            "label": "totalAllocPoint",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:153"
+          },
+          {
+            "contract": "Staking",
+            "label": "startBlock",
+            "type": "t_uint256",
+            "src": "contracts/farm/Staking.sol:157"
+          }
+        ],
+        "types": {
+          "t_contract(ISpeed)8217": {
+            "label": "contract ISpeed"
+          },
+          "t_contract(ERC20Upgradeable)818": {
+            "label": "contract ERC20Upgradeable"
+          },
+          "t_contract(IFacility)8202": {
+            "label": "contract IFacility"
+          },
+          "t_contract(IHorse)8169": {
+            "label": "contract IHorse"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(PoolInfo)8303_storage": {
+            "label": "struct Staking.PoolInfo",
+            "members": [
+              {
+                "label": "totalStake",
+                "type": "t_uint256"
+              },
+              {
+                "label": "allocPoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lastRewardBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "accSpeedPerShare",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)8270_storage)": {
+            "label": "mapping(address => struct Staking.UserInfo)"
+          },
+          "t_struct(UserInfo)8270_storage": {
+            "label": "struct Staking.UserInfo",
+            "members": [
+              {
+                "label": "ownedTokenId",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedStable",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "ownedFacility",
+                "type": "t_mapping(t_uint256,t_bool)"
+              },
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "stableIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "facilityIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8294_storage)dyn_storage"
+              },
+              {
+                "label": "stables",
+                "type": "t_array(t_struct(Stable)8285_storage)dyn_storage"
+              },
+              {
+                "label": "facility",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "totalHorse",
+                "type": "t_uint256"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardDebt",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_struct(Horse)8294_storage)dyn_storage": {
+            "label": "struct Staking.Horse[]"
+          },
+          "t_struct(Horse)8294_storage": {
+            "label": "struct Staking.Horse",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "enterBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "remainBlock",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_struct(Stable)8285_storage)dyn_storage": {
+            "label": "struct Staking.Stable[]"
+          },
+          "t_struct(Stable)8285_storage": {
+            "label": "struct Staking.Stable",
+            "members": [
+              {
+                "label": "horseIndex",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "horses",
+                "type": "t_array(t_struct(Horse)8294_storage)dyn_storage"
+              },
+              {
+                "label": "multiplier",
+                "type": "t_uint256"
+              },
+              {
+                "label": "popularity",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    }
+  }
+}
