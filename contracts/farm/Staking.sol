@@ -487,7 +487,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
             }
 
             uint256 rewardPerBlock = _rewardPerAmount.div(runningBlock);
-            uint256 retriedReward = rewardPerBlock.div(5);
+           
             if (runningBlock > _horse.remainBlock) {
                 uint256 retriedBlock = runningBlock - _horse.remainBlock;
                 normalizeReward = normalizeReward.add(
@@ -496,7 +496,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
                     )
                 );
                 normalizeReward = normalizeReward.add(
-                    retriedBlock.mul(retriedReward).mul(_horse.popularity)
+                    retriedBlock.mul(rewardPerBlock).mul(horse.getPopularity(_horse.tokenId))
                 );
             } else {
                 normalizeReward = normalizeReward.add(
