@@ -882,11 +882,12 @@ abstract contract Ownable is Context {
 */
 
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.0;
+pragma solidity 0.8.11;
 
 contract JOC is ERC20, Ownable {
     using SafeMath for uint256;
     uint256 public constant MAX_SUPPLY = 300000000000000000000000000;//300,000,000
+    event UpdateAdmin(address admin,bool isAdmin);
 
     modifier isAdmin() {
         require(admins[msg.sender], "Not admin");
@@ -901,6 +902,8 @@ contract JOC is ERC20, Ownable {
 
     function setAdmin(address _address, bool _isAdmin) public onlyOwner {
         admins[_address] = _isAdmin;
+
+        emit UpdateAdmin(_address,_isAdmin);
     }
 
     function mint(address _receiver, uint256 _amount) external isAdmin {
