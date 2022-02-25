@@ -20,11 +20,13 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 interface IHorse {
     function getPopularity(uint256 _tokenId) external view returns (uint256);
 
-    function safeTransferFrom(
+    function transferFrom(
         address from,
         address to,
         uint256 tokenId
     ) external;
+
+
 
     function isApprovedForAll(address owner, address operator)
         external
@@ -48,7 +50,7 @@ interface IFacility {
         external
         returns (bool);
 
-    function safeTransferFrom(
+    function transferFrom(
         address from,
         address to,
         uint256 tokenId
@@ -523,7 +525,6 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
                 continue;
             }
             uint256 rewardPerBlock = _rewardPerAmount.div(runningBlock);
-            uint256 retriedReward = rewardPerBlock.div(5);
 
             if (runningBlock > _horse.remainBlock) {
                 uint256 retriedBlock = runningBlock - _horse.remainBlock;
@@ -532,12 +533,13 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
                         _horse.popularity
                     )
                 );
-                normalizeReward = normalizeReward.add(
-                    retriedBlock.mul(retriedReward).mul(_horse.popularity)
-                );
 
                 _horse.popularity = horse.getPopularity(_horse.tokenId);
                 _horse.remainBlock = 0;
+
+                normalizeReward = normalizeReward.add(
+                    retriedBlock.mul(rewardPerBlock).mul(_horse.popularity)
+                );
             } else {
                 normalizeReward = normalizeReward.add(
                     runningBlock.mul(rewardPerBlock).mul(_horse.popularity) // 2x
@@ -612,7 +614,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
             }
         }
 
-        facility.safeTransferFrom(address(msg.sender), address(this), _tokenId);
+        facility.transferFrom(address(msg.sender), address(this), _tokenId);
 
         // update amount
         uint256 popularity = facility.popularity(_tokenId);
@@ -644,7 +646,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
             payReward(user);
         }
 
-        facility.safeTransferFrom(address(this), address(msg.sender), _tokenId);
+        facility.transferFrom(address(this), address(msg.sender), _tokenId);
 
         // swapIndex
         user.facility[user.facilityIndex[_tokenId]] = user.facility[
@@ -684,7 +686,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         }
 
         uint256 multiplier = facility.multipliers(_tokenId);
-        facility.safeTransferFrom(address(msg.sender), address(this), _tokenId);
+        facility.transferFrom(address(msg.sender), address(this), _tokenId);
 
         Stable[] storage userStable = user.stables; //[]
         user.stableIndex[_tokenId] = userStable.length; //0
@@ -728,7 +730,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
             withdrawHorseInStable(_stableTokenId, horses[index].tokenId);
         }
         // transfer stable to user
-        facility.safeTransferFrom(
+        facility.transferFrom(
             address(this),
             address(msg.sender),
             _stableTokenId
@@ -773,7 +775,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         //always stable has capacity 2 slot .
         require(stable.horses.length < 2, "over capacity");
         // trasfer horse from owner to contract
-        horse.safeTransferFrom(
+        horse.transferFrom(
             address(msg.sender),
             address(this),
             _horseTokenId
@@ -849,7 +851,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         pool.totalStake = pool.totalStake.add(
             getPopularityInStable(_stableTokenId)
         );
-        horse.safeTransferFrom(
+        horse.transferFrom(
             address(this),
             address(msg.sender),
             _horseTokenId
@@ -881,7 +883,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
 
         uint256 popularity = horse.getPopularity(_tokenId);
 
-        horse.safeTransferFrom(address(msg.sender), address(this), _tokenId);
+        horse.transferFrom(address(msg.sender), address(this), _tokenId);
         user.ownedTokenId[_tokenId] = true;
         user.horseIndex[_tokenId] = user.horses.length;
         user.amount = user.amount.add(popularity);
@@ -901,7 +903,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         emit DepositHorse(msg.sender, popularity, _tokenId);
     }
 
-    function emergencyWithdrawHorse(uint256 _tokenId) external {
+    function emergencyWithdrawHorse(uint256 _tokenId) external nonReentrant {
         PoolInfo storage pool = poolInfo;
         UserInfo storage user = userInfo[msg.sender];
         require(user.ownedTokenId[_tokenId], "withdrawHorse: not good");
@@ -917,7 +919,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         user.amount = user.amount.sub(popularity);
         user.totalHorse = user.totalHorse.sub(1);
         user.ownedTokenId[_tokenId] = false;
-        horse.safeTransferFrom(address(this), address(msg.sender), _tokenId);
+        horse.transferFrom(address(this), address(msg.sender), _tokenId);
         user.rewardDebt = user.amount.mul(poolInfo.accSpeedPerShare).div(1e12);
         pool.totalStake = pool.totalStake.sub(popularity);
         emit WithdrawHorse(msg.sender, _tokenId, popularity);
@@ -927,14 +929,14 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         external
         onlyOwner
     {
-        horse.safeTransferFrom(address(this), address(_receiver), _tokenId);
+        horse.transferFrom(address(this), address(_receiver), _tokenId);
     }
 
     function adminWithDrawStable(address _receiver, uint256 _tokenId)
         external
         onlyOwner
     {
-        facility.safeTransferFrom(address(this), address(_receiver), _tokenId);
+        facility.transferFrom(address(this), address(_receiver), _tokenId);
     }
 
     function withdrawHorse(uint256 _tokenId) external nonReentrant {
@@ -959,7 +961,7 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         user.amount = user.amount.sub(popularity);
         user.totalHorse = user.totalHorse.sub(1);
         user.ownedTokenId[_tokenId] = false;
-        horse.safeTransferFrom(address(this), address(msg.sender), _tokenId);
+        horse.transferFrom(address(this), address(msg.sender), _tokenId);
         user.rewardDebt = user.amount.mul(poolInfo.accSpeedPerShare).div(1e12); //pendingSpeed(msg.sender);
         pool.totalStake = pool.totalStake.sub(popularity);
         emit WithdrawHorse(msg.sender, _tokenId, popularity);
