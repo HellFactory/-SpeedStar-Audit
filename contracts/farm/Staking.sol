@@ -925,20 +925,6 @@ contract Staking is Ownable, ERC721Holder, ReentrancyGuard {
         emit WithdrawHorse(msg.sender, _tokenId, popularity);
     }
 
-    function adminWithDrawHorse(address _receiver, uint256 _tokenId)
-        external
-        onlyOwner
-    {
-        horse.transferFrom(address(this), address(_receiver), _tokenId);
-    }
-
-    function adminWithDrawStable(address _receiver, uint256 _tokenId)
-        external
-        onlyOwner
-    {
-        facility.transferFrom(address(this), address(_receiver), _tokenId);
-    }
-
     function withdrawHorse(uint256 _tokenId) external nonReentrant {
         PoolInfo storage pool = poolInfo;
         UserInfo storage user = userInfo[msg.sender];
